@@ -4,7 +4,7 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 
-const wss = new WebSocketServer({ port: 8888 })
+const wss = new WebSocketServer({ port: 7777 })
 
 //WebsocketConnect()
 

@@ -13,7 +13,7 @@
    
     <div id="app">
       <el-button onclick="sendData()">发送数据</el-button>
-      
+
       <div>
         <el-tree
           style="max-width: 600px"
@@ -135,7 +135,7 @@
       }
 
       function init() {
-        ws = new WebSocket('ws://localhost:8888')
+        ws = new WebSocket('ws://localhost:7777')
 
         ws.onopen = function () {
           console.log('连接成功')
