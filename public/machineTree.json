@@ -1,343 +1,74 @@
 {
-    "jsonrpc": "2.0",
-    "method": "getObj",
-    "id": 1,
-    "result": {
-        "children": [
-            {
-                "children": [
-                    {
-                        "children": [
-                            {
-                                "children": [
-                                    {
-                                        "level": "mo",
-                                        "name": "定表直流",
-                                        "tag": "D0301.D0301J1.电参数.定表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "定表交流",
-                                        "tag": "D0301.D0301J1.电参数.定表交流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表直流",
-                                        "tag": "D0301.D0301J1.电参数.反表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表交流",
-                                        "tag": "D0301.D0301J1.电参数.反表交流"
-                                    }
-                                ],
-                                "level": "mo",
-                                "name": "电参数",
-                                "tag": "D0301.D0301J1.电参数"
-                            },
-                            {
-                                "level": "mp",
-                                "name": "缺口",
-                                "saveMode": "always",
-                                "tag": "D0301.D0301J1.缺口",
-                                "time": "2024-05-16 10:10:54",
-                                "val": {
-                                    "acqreason": 2,
-                                    "humi": 40,
-                                    "location": 1,
-                                    "lrsign": "left",
-                                    "offset": "0.45",
-                                    "std": "2.00",
-                                    "temp": 28,
-                                    "val": "2.45"
+    "name": "南京铁路网",
+    "type": "1",
+    "typedesc": "线网",
+    "id": "0",
+    "children": [
+        {
+            "name": "四号线",
+            "type": "2",
+            "typedesc": "线路",
+            "id": "0_0",
+            "children": [
+                {
+                    "name": "青龙基地站",
+                    "type": "3",
+                    "typedesc": "站点",
+                    "id": "0_0_0",
+                    "children": [
+                        {
+                            "name": "D0301",
+                            "type": "4",
+                            "typedesc": "道岔",
+                            "id": "0_0_0_0",
+                            "relate_tree": [
+                                "0_0"
+                            ],
+                            "children": [
+                                {
+                                    "name": "D0301J1",
+                                    "type": "5",
+                                    "typedesc": "转辙机",
+                                    "model": "zdj9",
+                                    "id": "0_0_0_0_0"
                                 },
-                                "valType": ""
-                            },
-                            {
-                                "level": "mp",
-                                "name": "阻力",
-                                "saveMode": "always",
-                                "tag": "D0301.D0301J1.阻力",
-                                "time": "2024-05-16 09:25:31",
-                                "val": null,
-                                "valType": ""
-                            }
-                        ],
-                        "level": "mo",
-                        "name": "D0301J1",
-                        "online": false,
-                        "tag": "D0301.D0301J1",
-                        "type": "转辙机"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [
-                                    {
-                                        "level": "mo",
-                                        "name": "定表直流",
-                                        "tag": "D0301.D0301J2.电参数.定表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "定表交流",
-                                        "tag": "D0301.D0301J2.电参数.定表交流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表直流",
-                                        "tag": "D0301.D0301J2.电参数.反表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表交流",
-                                        "tag": "D0301.D0301J2.电参数.反表交流"
-                                    }
-                                ],
-                                "level": "mo",
-                                "name": "电参数",
-                                "tag": "D0301.D0301J2.电参数"
-                            },
-                            {
-                                "level": "mp",
-                                "name": "缺口",
-                                "saveMode": "always",
-                                "tag": "D0301.D0301J2.缺口",
-                                "time": "2024-05-16 10:10:55",
-                                "val": {
-                                    "acqreason": 2,
-                                    "humi": 40,
-                                    "location": 1,
-                                    "lrsign": "right",
-                                    "offset": "-1.07",
-                                    "std": "2.00",
-                                    "temp": 29,
-                                    "val": "0.93"
+                                {
+                                    "name": "D0301J2",
+                                    "type": "5",
+                                    "typedesc": "转辙机",
+                                    "model": "zdj9",
+                                    "id": "0_0_0_0_1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "W2701",
+                            "type": "4",
+                            "typedesc": "道岔",
+                            "id": "0_0_0_1",
+                            "relate_tree": [
+                                "0_0"
+                            ],
+                            "children": [
+                                {
+                                    "name": "W2701J1",
+                                    "type": "5",
+                                    "typedesc": "转辙机",
+                                    "model": "zdj9",
+                                    "id": "0_0_0_1_0"
                                 },
-                                "valType": ""
-                            },
-                            {
-                                "level": "mp",
-                                "name": "阻力",
-                                "saveMode": "always",
-                                "tag": "D0301.D0301J2.阻力",
-                                "time": "2024-05-16 09:25:32",
-                                "val": null,
-                                "valType": ""
-                            }
-                        ],
-                        "level": "mo",
-                        "name": "D0301J2",
-                        "online": false,
-                        "tag": "D0301.D0301J2",
-                        "type": "转辙机"
-                    }
-                ],
-                "level": "mo",
-                "name": "D0301",
-                "online": false,
-                "tag": "D0301",
-                "type": "道岔"
-            },
-            {
-                "children": [
-                    {
-                        "children": [
-                            {
-                                "level": "mp",
-                                "name": "继电器",
-                                "saveMode": "always",
-                                "tag": "W2701.W2701J2.继电器",
-                                "time": "-",
-                                "val": null,
-                                "valType": ""
-                            },
-                            {
-                                "level": "mp",
-                                "name": "缺口",
-                                "saveMode": "always",
-                                "tag": "W2701.W2701J2.缺口",
-                                "time": "-",
-                                "val": null,
-                                "valType": ""
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "level": "mo",
-                                        "name": "定表直流",
-                                        "tag": "W2701.W2701J2.电参数.定表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "定表交流",
-                                        "tag": "W2701.W2701J2.电参数.定表交流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表直流",
-                                        "tag": "W2701.W2701J2.电参数.反表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表交流",
-                                        "tag": "W2701.W2701J2.电参数.反表交流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "p",
-                                        "tag": "W2701.W2701J2.电参数.p"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ia",
-                                        "tag": "W2701.W2701J2.电参数.Ia"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ib",
-                                        "tag": "W2701.W2701J2.电参数.Ib"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ic",
-                                        "tag": "W2701.W2701J2.电参数.Ic"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Uab",
-                                        "tag": "W2701.W2701J2.电参数.Uab"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ubc",
-                                        "tag": "W2701.W2701J2.电参数.Ubc"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Uac",
-                                        "tag": "W2701.W2701J2.电参数.Uac"
-                                    }
-                                ],
-                                "level": "mo",
-                                "name": "电参数",
-                                "tag": "W2701.W2701J2.电参数"
-                            }
-                        ],
-                        "level": "mo",
-                        "name": "W2701J2",
-                        "online": false,
-                        "tag": "W2701.W2701J2",
-                        "type": "转辙机"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [
-                                    {
-                                        "level": "mo",
-                                        "name": "定表直流",
-                                        "tag": "W2701.W2701J1.电参数.定表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "定表交流",
-                                        "tag": "W2701.W2701J1.电参数.定表交流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表直流",
-                                        "tag": "W2701.W2701J1.电参数.反表直流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "反表交流",
-                                        "tag": "W2701.W2701J1.电参数.反表交流"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "p",
-                                        "tag": "W2701.W2701J1.电参数.p"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ia",
-                                        "tag": "W2701.W2701J1.电参数.Ia"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ib",
-                                        "tag": "W2701.W2701J1.电参数.Ib"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ic",
-                                        "tag": "W2701.W2701J1.电参数.Ic"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Uab",
-                                        "tag": "W2701.W2701J1.电参数.Uab"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Ubc",
-                                        "tag": "W2701.W2701J1.电参数.Ubc"
-                                    },
-                                    {
-                                        "level": "mo",
-                                        "name": "Uac",
-                                        "tag": "W2701.W2701J1.电参数.Uac"
-                                    }
-                                ],
-                                "level": "mo",
-                                "name": "电参数",
-                                "tag": "W2701.W2701J1.电参数"
-                            },
-                            {
-                                "level": "mp",
-                                "name": "继电器",
-                                "saveMode": "always",
-                                "tag": "W2701.W2701J1.继电器",
-                                "time": "-",
-                                "val": null,
-                                "valType": ""
-                            },
-                            {
-                                "level": "mp",
-                                "name": "缺口",
-                                "saveMode": "always",
-                                "tag": "W2701.W2701J1.缺口",
-                                "time": "2024-05-16 10:11:13",
-                                "val": {
-                                    "acqreason": 2,
-                                    "humi": 41,
-                                    "location": 1,
-                                    "lrsign": "left",
-                                    "offset": "0.35",
-                                    "std": "1.50",
-                                    "temp": 28,
-                                    "val": "1.85"
-                                },
-                                "valType": ""
-                            }
-                        ],
-                        "level": "mo",
-                        "name": "W2701J1",
-                        "online": false,
-                        "tag": "W2701.W2701J1",
-                        "type": "转辙机"
-                    }
-                ],
-                "level": "mo",
-                "name": "W2701",
-                "online": false,
-                "tag": "W2701",
-                "type": "道岔"
-            }
-        ],
-        "level": "root",
-        "name": "青龙基地站",
-        "type": "站点"
-    }
+                                {
+                                    "name": "W2701J2",
+                                    "type": "5",
+                                    "typedesc": "转辙机",
+                                    "model": "zdj9",
+                                    "id": "0_0_0_1_1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
