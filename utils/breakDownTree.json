@@ -1,0 +1,70 @@
+{
+  "jsonrpc": "2.0",
+  "method": "getFaultTree",
+  "id": 1,
+  "result": [
+    {
+      "name": "ZDJ9双牵外锁道岔失表",
+      "type": "lostDisplayOfTurnout",
+      "id": "0_0",
+      "node": [
+        {
+          "name": "牵引点故障",
+          "type": "towingPointFault",
+          "id": "1_1",
+          "node": [
+            {
+               "name": "电气故障",
+               "type": "electricalFault",
+                "id": "2_1"
+            },
+            {
+               "name": "机械故障",
+               "type": "mechanicalFault",
+                "id": "2_2"
+            }
+          ]
+        },
+        {
+          "name": "公共电路(通用): 故障(通用)",
+          "type": "commonCircuitFault",
+          "id": "1_2",
+          "node": [
+             {
+                "name": "总控故障",
+                "type": "overallControlFault",
+                 "id": "2_3"
+             },
+             {
+                "name": "总表故障",
+                "type": "overallDisplayFault",
+                 "id": "2_4"
+            },
+            {
+               "name": "切断与保护故障",
+               "type": "cutDownFault",
+                "id": "2_5"
+            }
+          ]
+        },
+        {
+          "name": "轨道结构故障",
+          "type": "trackStructureFault",
+          "id": "1_3",
+          "node": [
+             {
+                "name": "动作受阻",
+                "type": "actionHinderedFault",
+                 "id": "2_6"
+             },
+             {
+                "name": "挤岔",
+                "type": "turnoutCrowdFault",
+                 "id": "2_7"
+             }
+          ]
+        }
+      ]
+    }
+  ]
+}
